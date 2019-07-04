@@ -1,16 +1,21 @@
 import random
-numbers_1 = int(input("List 1 size: "))
-numbers_2 = int(input("List 2 size: "))
+numbers_1 = int(input("Highest List Number in List 1: "))
+# numbers_2 = int(input("Highest List Number in List 2: "))
 
-#take user input and generate a range
-for n1 in range(numbers_1):
-    x = random.randint(0 , n1)
-    
-    for n2 in range(numbers_2):
-        y = random.randint(0, n2)
-        c = x + y
+num1 = range(numbers_1)
 
-my_set = set(c)
-my_new = list(c)
-# unique_list = set(c)
-print(my_new)
+
+# # for x in range(numbers_1):
+# #         for y in range(numbers_2):
+# #                 c = x + y
+# #                 print(random.randint(0, c))              
+
+# # generate range of numbers
+# num1 = range(0, numbers_1)
+# num2 = range(0, numbers_2)
+
+# #go through each number in each list and output it to i and x. 
+# for i in num1:
+#         for x in num2:
+#                 y = set(x) & set(i) 
+#                 print(y)
