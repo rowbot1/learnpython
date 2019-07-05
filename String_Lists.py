@@ -1,36 +1,15 @@
-word = input("Enter Word: ")
-# print(word[:])
-
-#could use a reverse function or something - dont think thats the intended way
-
-#put every letter noonin word in reverse order, then compare it to word variable, if same then print true
-
-# get length of word
-# add end letter to list
-# add next letter to list
-# add first letter to list
-# compare list to word variable 
-
-# for letter in word:
-#     backwards_word = word[:-1]
-#     print(backwards_word)
-    
-# i = len(word)
-# j = i+1
-# print(i)
+"""
+https://www.practicepython.org/exercise/2014/03/12/06-string-lists.html
+"""
+word = input("Enter Word to test if it is a Palindrome: ")
 
 letter = word[::-1] 
-print(letter, end= ' ' )  
+# print(letter, end= ' ' )  
 
 if word == letter:
-    print(True)
+    print("This is a Palindrome")
 else:
-    print(False)
+    print("This is NOT a Palindrome")
 
-# print(i)
-
-# while i >=0:
-#     print(word[i])
-#     i -= 1
 
 
