@@ -18,23 +18,28 @@ r = "rock"
 p = "paper"
 s = "scissors"
 
-p1 = input("Player 1 R P or C: ")
-p2 = input("Player 2 R P or C: ")
-
-#not sure when to use elif or else or while
-if p1 == p2:
-    print("DRAW")
-elif:
-    p1 == r
-    p2 == s
-    print("1 Wins")
-elif:
-    p1 == p
-    p2 == r
-    print("1 Wins")
-elif:
+#ensures the game contines to play after win sequence has completed
+while True:
+    p1 = input("Player 1 R P or S: ")
+    p2 = input("Player 2 R P or S: ")
+    
     
 
+
+#not sure when to use elif or else or while
+# if player1 == p2:
+#     print("DRAW")
+# elif:
+#     p1 == r
+#     p2 == s
+#     print("1 Wins")
+# elif:
+#     p1 == p
+#     p2 == r
+#     print("1 Wins")
+# elif:
+    
+# for i in 
 
 
 # valid = ["r", "p", "s"]
