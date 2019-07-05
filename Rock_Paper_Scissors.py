@@ -11,55 +11,43 @@ rock draws with rock
 paper draws with paper
 scissors draws with scissors
 
-"""
-"""idea to make this a network game and randomise who goes first"""
+# """
 
 r = "rock"
 p = "paper"
 s = "scissors"
 
-#ensures the game contines to play after win sequence has completed
+# # ensures the game contines to play after win sequence has completed
 while True:
-    p1 = input("Player 1 R P or S: ")
-    p2 = input("Player 2 R P or S: ")
+    p1 = input("Player 1 R P or C: ").lower()
+    p2 = input("Player 2 R P or C: ").lower()
     
-    
-
-
-#not sure when to use elif or else or while
-# if player1 == p2:
-#     print("DRAW")
-# elif:
-#     p1 == r
-#     p2 == s
-#     print("1 Wins")
-# elif:
-#     p1 == p
-#     p2 == r
-#     print("1 Wins")
-# elif:
-    
-# for i in 
-
-
-# valid = ["r", "p", "s"]
+    if p1 == p2:
+        print("Draw")
+        
+    elif p1 == r and p2 == p:
+        print("paper wins")
+    elif p1 == r and p2 == s:
+        print("rock wins")
+    elif p1 == p and p2 == r:
+        print("paper wins")
+    elif p1 == p and p2 == s:
+        print("scissors win")
+    elif p1 == s and p2 == r:
+        print("rock wins")
+    elif p1 == s and p2 == p:
+        print("scissors win")
 
 
 
-# # p1 = input("Player 1 type R, P or S to choose Rock, Paper or Scissors: ")
-# # p2 = input("Player 2 type R, P or S to choose Rock, Paper or Scissors: ")
-# p1 = input("Player 1 R P or C: ")
-# p2 = input("Player 2 R P or C: ")
 
-# while True:
-#     p1 == valid
-#     p2 == valid
-# else:
-#     print("Not Valid")
 
-#     if p1 == p2:
-#         print("Draw Game")
-#     elif p1 == r and p2 == s:
-#         print("Player 1 Wins!")
-#     elif p1 == r and p2 == p:
-#         print("Player 2 Wins")
+
+
+
+
+
+
+
+
+"""idea to make this a network game and randomise who goes first"""
