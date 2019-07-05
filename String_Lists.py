@@ -5,6 +5,7 @@ word = input("Enter Word to test if it is a Palindrome: ")
 
 #start at all of the word ':', stop at all of the word ':', step through it one letter at a time backwards '-1'
 #https://stackoverflow.com/questions/31633635/what-is-the-meaning-of-inta-1-in-python
+# the -1 translates to lent(word)-1
 letter = word[::-1] 
 
 if word == letter:
