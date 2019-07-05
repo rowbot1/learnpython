@@ -21,9 +21,17 @@ s = "scissors"
 valid = ["r", "p", "s"]
 
 
+
 # player_1 = input("Player 1 type R, P or S to choose Rock, Paper or Scissors: ")
 # player_2 = input("Player 2 type R, P or S to choose Rock, Paper or Scissors: ")
 
 while True:
-    player_1 = input("Player 1 R P or C: ")
-    if player_1
+    p1 = input("Player 1 R P or C: ")
+    p2 = input("Player 2 R P or C: ")
+
+    if p1 == p2:
+        print("Draw Game")
+    elif p1 == r and p2 == s:
+        print("Player 1 Wins!")
+    elif p1 == r and p2 == p:
+        print("Player 2 Wins")
