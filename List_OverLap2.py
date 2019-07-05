@@ -26,6 +26,21 @@ b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 for num in a:
         if num in b:
                 print(num)
+                
+print("----------------------------------------")
+import random
+
+
+# list(range(5)) + list(range(10,20))
+list1 = range(100)
+list2 = range(100)
+# list(range (10) + list(range (10))
+
+# list3 = list1 & list2
+# print(list3)
+# i need to create random lists
+print("1st List: ", random.sample(list1,k=10))
+print("2nd List: ", random.sample(list2,k=10))
 
 
 # c = set(a) & set(b)
