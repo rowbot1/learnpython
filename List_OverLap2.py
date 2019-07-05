@@ -1,56 +1,26 @@
-# import random
-# numbers_1 = int(input("Highest List Number in List 1: "))
-# # numbers_2 = int(input("Highest List Number in List 2: "))
-
-# num1 = range(numbers_1)
-
-
-# # # for x in range(numbers_1):
-# # #         for y in range(numbers_2):
-# # #                 c = x + y
-# # #                 print(random.randint(0, c))              
-
-# # # generate range of numbers
-# # num1 = range(0, numbers_1)
-# # num2 = range(0, numbers_2)
-
-# # #go through each number in each list and output it to i and x. 
-# # for i in num1:
-# #         for x in num2:
-# #                 y = set(x) & set(i) 
-# #                 print(y)
-
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-
+print("\nNumbers that are both in list a and b: ")
 for num in a:
         if num in b:
-                print(num)
+                print(num, end= ' ')
                 
-print("----------------------------------------")
 import random
 
+num1 = int(input("\nSize of List in List 1: "))
+num2 = int(input("Size of List 2: "))
 
-# list(range(5)) + list(range(10,20))
-list1 = range(100)
-list2 = range(100)
-# list(range (10) + list(range (10))
-
-# list3 = list1 & list2
-# print(list3)
-# i need to create random lists
-print("1st List: ", random.sample(list1,k=10))
-print("2nd List: ", random.sample(list2,k=10))
+list1 = range(num1)
+list2 = range(num2)
 
 
-# c = set(a) & set(b)
-# print(c)
+first_list = random.sample(list1,k=10)
+print("First List: ", first_list)
+second_list = random.sample(list2,k=10)
+print("Second List: ", second_list)
 
-# for item in range(0,100):
-#         print(random.randrange(0,100))        
-# # d = random.randrange(0, 100)
-# print(d)
-# e = random.randrange(0, 50)
+print("Similar Numbers")
 
-# f = set(d) & set(e)
-# print(f)
+for numb in first_list:
+    if numb in second_list:
+        print(numb, end = ' ')
