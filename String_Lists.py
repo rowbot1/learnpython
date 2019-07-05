@@ -3,8 +3,8 @@ https://www.practicepython.org/exercise/2014/03/12/06-string-lists.html
 """
 word = input("Enter Word to test if it is a Palindrome: ")
 
+#start at all of the word ':', stop at all of the word ':', step through it one letter at a time backwards '-1'
 letter = word[::-1] 
-# print(letter, end= ' ' )  
 
 if word == letter:
     print("This is a Palindrome")
