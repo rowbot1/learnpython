@@ -8,7 +8,6 @@ P	S
 S	R
 S	P
 """
-
 rock = "r"
 paper = "p"
 scissors = "s"
@@ -17,10 +16,10 @@ while True:
     p1 = input("Player 1 r p or s: ").lower()
     p2 = input("Player 2 r p or s: ").lower()
     if p1 == p2:
-        print("Draw")    
+        print("Draw")
     elif p1 == rock and p2 == paper:
         print("Paper wins")
-    elif p1 == rock and p2 == scissors:   
+    elif p1 == rock and p2 == scissors:
         print("rock wins")
     elif p1 == paper and p2 == rock:
         print("scissors wins")
