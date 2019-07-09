@@ -14,4 +14,8 @@ one_hundred = year - age + 100
 
 msg = f"{name} you will be {prediction} in the year {answer} and 100 in {one_hundred}"
 
+multi_lines = int(input("Enter number of times you'd like to see it: "))
+
+print(msg * multi_lines)
+
 print(msg)
