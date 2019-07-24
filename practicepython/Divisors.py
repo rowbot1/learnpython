@@ -10,3 +10,4 @@ list_range = range(1, user_number + 1)
 for element in list_range:
     if user_number % element == 0:
         print(element)
+
